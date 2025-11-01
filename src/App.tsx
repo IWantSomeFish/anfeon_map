@@ -1,8 +1,26 @@
 import React from "react";
-import MetroMap from "./components/MetroMap";
+import MapCanvas from "./components/MapCanvas";
+import SlidingSidebar from "./components/Sidebar";
+import LegendPanel from "./components/LegendPanel";
+import { stations } from "./data/stations";
 
-const App: React.FC = () => {
-  return <MetroMap width={1000} height={700} background="/bg-map.png" />;
+export default function App() {
+  return (
+    <div style={styles.container}>
+      <MapCanvas stations={stations} />
+      <SlidingSidebar stations={stations} />
+      <LegendPanel />
+    </div>
+  );
+}
+
+const styles: Record<string, React.CSSProperties> = {
+  container: {
+    position: "relative",
+    height: "100vh",
+    width: "100vw",
+    overflow: "hidden",
+    fontFamily: "sans-serif",
+    color: "#fff",
+  },
 };
-
-export default App;

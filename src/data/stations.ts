@@ -1,38 +1,18 @@
-export const stations = [
-  {
-    id: "central",
-    name: "Центральная",
-    x: 450,
-    y: 332,
-    desc: "Главный пересадочный узел города.",
-    connections: [
-      { to: "north", type: "standard" },
-      { to: "east", type: "monorail" },
-      { to: "west", type: "cargo" }
-    ]
-  },
-  {
-    id: "north",
-    name: "Северная",
-    x: 400,
-    y: 150,
-    desc: "Районный вокзал.",
-    connections: [{ to: "central", type: "standard" }]
-  },
-  {
-    id: "east",
-    name: "Восточная",
-    x: 550,
-    y: 300,
-    desc: "Жилой квартал.",
-    connections: [{ to: "central", type: "monorail" }]
-  },
-  {
-    id: "west",
-    name: "Западная",
-    x: 250,
-    y: 300,
-    desc: "Промзона.",
-    connections: [{ to: "central", type: "cargo" }]
-  }
+export interface Station {
+  id: string;
+  name: string;
+  x: number;
+  y: number;
+  region: string;
+}
+
+export const stations: Station[] = [
+  { id: "s1", name: "Центральная", x: 400, y: 280, region: "Центральный" },
+  { id: "s2", name: "Северная", x: 400, y: 100, region: "Северный" },
+  { id: "s3", name: "Южная", x: 400, y: 460, region: "Южный" },
+  { id: "s4", name: "Западная", x: 200, y: 280, region: "Западный" },
+  { id: "s5", name: "Восточная", x: 600, y: 280, region: "Восточный" },
+  { id: "s6", name: "Аэропорт", x: 580, y: 120, region: "Северный" },
+  { id: "s7", name: "Прибрежная", x: 620, y: 420, region: "Южный" },
+  { id: "s7", name: "Прибрежная", x: 800, y: 420, region: "Южный" },
 ];

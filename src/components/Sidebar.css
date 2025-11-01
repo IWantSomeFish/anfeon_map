@@ -1,0 +1,78 @@
+.sidebar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+  z-index: 999;
+}
+
+.sidebar-container.closed {
+  transform: translateX(-220px);
+}
+
+/* Панель */
+.sidebar {
+  width: 220px;
+  height: 100%;
+  background: rgba(30, 41, 59, 0.95);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  box-shadow: 3px 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.sidebar-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.sidebar-nav button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 8px;
+  padding: 8px;
+  border: none;
+  background: none;
+  color: #ddd;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.sidebar-nav button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-footer {
+  font-size: 0.8rem;
+  color: #aaa;
+  text-align: center;
+  margin-top: auto;
+}
+
+/* Кнопка */
+.sidebar-toggle {
+  position: absolute;
+  right: -24px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #1e293b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 0 6px 6px 0;
+  padding: 8px;
+  font-size: 16px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  transition: background 0.2s;
+}
+
+.sidebar-toggle:hover {
+  background: #334155;
+}
