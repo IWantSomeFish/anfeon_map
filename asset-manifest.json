@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/anfeon_map/static/css/main.a5e0849e.css",
-    "main.js": "/anfeon_map/static/js/main.2ad46583.js",
+    "main.css": "/anfeon_map/static/css/main.8c83091a.css",
+    "main.js": "/anfeon_map/static/js/main.2ba6962b.js",
     "index.html": "/anfeon_map/index.html",
-    "main.a5e0849e.css.map": "/anfeon_map/static/css/main.a5e0849e.css.map",
-    "main.2ad46583.js.map": "/anfeon_map/static/js/main.2ad46583.js.map"
+    "main.8c83091a.css.map": "/anfeon_map/static/css/main.8c83091a.css.map",
+    "main.2ba6962b.js.map": "/anfeon_map/static/js/main.2ba6962b.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5e0849e.css",
-    "static/js/main.2ad46583.js"
+    "static/css/main.8c83091a.css",
+    "static/js/main.2ba6962b.js"
   ]
 }
