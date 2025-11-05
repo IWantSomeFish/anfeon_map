@@ -7,7 +7,7 @@ import { stations } from "./data/stations";
 export default function App() {
   return (
     <div style={styles.container}>
-      <MapCanvas stations={stations} />
+      <MapCanvas stations={stations} routes={[]} />
       <SlidingSidebar stations={stations} />
       <LegendPanel />
     </div>
